@@ -119,8 +119,7 @@ export default function Testimonials() {
             Don't take our word for it
           </h2>
           <p className="text-lg text-indigo-200/65">
-            We provide tech-first solutions that empower decision-makers to
-            build healthier and happier workspaces from anywhere in the world.
+Our vision is to empower individuals and organizations to thrive in a collaborative, tech-enabled environment, regardless of their location.
           </p>
         </div>
 

@@ -5,3 +5,72 @@
 @import "additional-styles/utility-patterns.css";
 @import "additional-styles/theme.css";
 @import "tailwindcss/utilities";
+
+.text-gradient-transition {
+  background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+  -webkit-background-clip: text;  /* Chrome, Safari, Opera */
+  background-clip: text;  /* Firefox */
+  color: transparent;  /* Ensures text is transparent and gradient shows */
+  display: inline-block;  /* Required to apply background to text */
+  transition: background 2s ease, color 2s ease;  /* Transition for the gradient */
+}
+
+/* Adjust SVG alignments */
+.sqD {
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+/* Specific positions for different SVGs */
+.sqD.squiggle-hero-html {
+  top: -90px;
+  right: 5%;
+}
+
+.sqD.squiggle-hero-nextjs {
+  top: 75px;
+  right: 0;
+}
+/* Apply custom styles to your SVG images */
+.sqD.bottom-300px {
+  bottom: -310px;
+  right: -120px;
+}
+
+.sqD.bottom-340px {
+  bottom: -340px;
+  left: -180px;
+}
+
+.sqD.squiggle-hero-pop1 {
+  top: -130px;
+  left: 15%;
+}
+
+.sqD.left-35px {
+  bottom: -85px;
+  left: 5px;
+  opacity: 0.4;
+}
+/* Jumping Effect for SVGs */
+.sqD {
+  animation: jumpEffect 2s ease-in-out infinite; /* Apply jumping effect */
+}
+
+@keyframes jumpEffect {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px); /* Move up */
+  }
+  50% {
+    transform: translateY(0); /* Back to the original position */
+  }
+  75% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Back to the original position */
+  }
+}
